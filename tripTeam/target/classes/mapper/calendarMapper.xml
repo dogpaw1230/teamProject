@@ -13,7 +13,7 @@
     </select>
 
     <select id="getPriceList" parameterType="String" resultType="PackageDto">
-        select packageNo, packageStartDate, packagePrice from package_info
+        select packageNo, packageStartDate, format(packagePrice,0) as packagePrice from package_info
         where packageId = #{packageId}
         order by packageStartDate
     </select>

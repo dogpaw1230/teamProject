@@ -13,7 +13,7 @@
             packageLocation,
             packageImg,
             packageTitle,
-            packagePrice,
+            format(packagePrice,0) as packagePrice,
             MAX(packageStartDate) AS packageStartDate,
             MAX(packageNo) AS packageNo
         from
@@ -60,7 +60,7 @@
             packageLocation,
             packageImg,
             packageTitle,
-            packagePrice,
+            format(packagePrice,0) as packagePrice,
             MAX(packageStartDate) AS packageStartDate,
             MAX(packageNo) AS packageNo
         from

@@ -7,6 +7,7 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <%@ page import="java.net.URLDecoder" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
@@ -289,6 +290,9 @@
 							</div>
 							<div class="packInfo">
 								<div class="packLocation">
+									<div style="width: 20px; height: 20px; margin-right: 10px">
+										<img src="<c:url value='/img/icon_location2.png'/>" style="width: 100%">
+									</div>
 									<span>${item.packageType}</span>
 									<span> + </span>
 									<span>${item.packageLocation}</span>
@@ -297,7 +301,10 @@
 									<p>${item.packageTitle}</p>
 								</div>
 								<div class="packPrice">
-									<p>${item.packagePrice}</p>
+									<div style="width: 20px; height: 20px; margin-right: 10px">
+										<img src="<c:url value='/img/icon_money1.png'/>" style="width: 100%">
+									</div>
+									<p>${item.packagePrice}원</p>
 								</div>
 							</div>
 						</div>
@@ -520,6 +527,19 @@
 			}
 		}
 	});
+
+	///////////////////////////////////////////////
+	// 가격에 쉼표찍기
+	function addCommas(number) {
+		return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+	}
+
+	let priceArr = [];
+
+	<c:forEach items="${packageForHome}" var="item">
+		priceArr.push(addCommas(${item.packagePrice}));
+	</c:forEach>
+	console.log("거지같네 : " + priceArr[0]);
 </script>
 </body>
 </html>

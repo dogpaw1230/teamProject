@@ -77,7 +77,8 @@
             margin-bottom: 5px;
             display: block;
             text-align: center;
-            color: black;
+            color: #0A174E;
+            font-weight: bold;
         }
 
         .pastDay {
@@ -500,6 +501,8 @@
         comparisonList.push("${item.packageStartDate}, ${item.packagePrice}, ${item.packageNo}");
         </c:forEach>
 
+        console.log(comparisonList);
+
         // realDateArray와 comparisonList의 날짜 비교해서 달력에 가격 넣기
         for(let i = 0; i < realDays.length; i++) {
             let comDay = realDays[i].innerText;
@@ -508,14 +511,14 @@
                 let comparisonMonth = comparisonList[j].split('-')[1];
                 let comparisonDay = comparisonList[j].split(',')[0].split('-')[2];
 
-                console.log("comparisonMonth: "+comparisonMonth + ", comparisonDay: " + comparisonDay);
+                // console.log("comparisonMonth: "+comparisonMonth + ", comparisonDay: " + comparisonDay);
 
                 if (realYear == comparisonYear && realMonth == comparisonMonth && comDay == comparisonDay) {
                     let dayText = document.getElementById(comparisonList[j].split(',')[0]);
-                    dayText.innerHTML = leftPad(comparisonList[j].split(',')[1]);
+                    dayText.innerHTML = leftPad(comparisonList[j].split(',')[1]/10 +'만');
 
                     let packNoText = dayText.nextElementSibling;
-                    packNoText.innerHTML = leftPad(comparisonList[j].split(',')[2]);
+                    packNoText.innerHTML = leftPad(comparisonList[j].split(',')[3]);
                     // packNo.innerHTML = leftPad(comparisonList[j].split(',')[2]);
                     console.log(comparisonList[j].split(',')[2]);
                 }
@@ -620,6 +623,12 @@
         }
         return value;
     }
+
+    ///////////////////////////////////////////////
+    // 가격에 쉼표찍기
+    // function addCommas(number, unit) {
+    //     return number.toString().replace(/\B(?=(\d{2})+(?!\d))/g, ",").replace(/,0{4,}/g, '') + unit;
+    // }
 
 </script>
 

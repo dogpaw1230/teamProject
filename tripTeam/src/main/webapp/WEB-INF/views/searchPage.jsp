@@ -1,5 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ page import="java.net.URLDecoder" %>
 <c:set var="logInOutLink" value="${ pageContext.request.getSession(false).getAttribute('id')==null?'/login/login':'/login/logout'}" />
 <c:set var="logInOutTxt" value="${ pageContext.request.getSession(false).getAttribute('id')==null?'로그인':'로그아웃'}" />
@@ -103,7 +104,8 @@
                         <div style="width: 20px; height: 20px; margin-right: 10px">
                             <img src="<c:url value='/img/icon_money1.png'/>" style="width: 100%">
                         </div>
-                        <p>${item.packagePrice}</p>
+                        <p>${item.packagePrice}
+                            원</p>
                     </div>
                 </div>
             </div>
@@ -293,6 +295,8 @@
             inputDate.value = minDate;
         }
     }
+
+
 
 
 </script>
