@@ -61,7 +61,8 @@
 
 <br>
 
-![frontend](https://github.com/dogpaw1230/teamProject/assets/146051611/5ab253a0-45c8-4a7e-9cb8-bbdeeca9a085)
+![frontend](https://github.com/dogpaw1230/teamProject/assets/146051611/ab60458b-99c7-4b60-aad0-ec53007292ef)
+
 
 <br>
 
