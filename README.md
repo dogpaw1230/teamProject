@@ -53,7 +53,7 @@
 
 ![팀소개](https://github.com/dogpaw1230/teamProject/assets/146051611/242c61e0-a323-4169-ba02-c1844161649a)
 
-<br>
+
 
 ### 2. 기술 스택
 
