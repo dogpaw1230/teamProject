@@ -71,12 +71,12 @@
 
 <br>
 
-### 2. ERD
+### 3. ERD
 <br>
 
 ![ERD](https://github.com/dogpaw1230/teamProject/assets/146051611/b6d07c79-d857-4932-8a2e-349c5d9d492a)
 
-### 3. 시연 영상
+### 4. 시연 영상
 
 영상 보러가기 👉  [BlueHorizon](https://youtu.be/-U5Wa2IEOi8)
 
