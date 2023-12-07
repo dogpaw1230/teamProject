@@ -51,11 +51,10 @@
 
 ### 1. 기술 스택
 
-- Backend
+- Backend : Java, Spring, MyBatis, JSP, Tomcat, MySQL
   
 ![backend](https://github.com/dogpaw1230/teamProject/assets/146051611/e4546c42-8cf9-4097-97c5-0c55dbfd98b2)
 
-  Java, Spring, MyBatis, JSP, Tomcat, MySQL
 
 ### 2. ERD
 
