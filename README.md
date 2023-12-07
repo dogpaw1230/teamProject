@@ -55,6 +55,10 @@
   
 ![backend](https://github.com/dogpaw1230/teamProject/assets/146051611/e4546c42-8cf9-4097-97c5-0c55dbfd98b2)
 
+- Frontend : HTML, CSS, Javascript, JQuery
+
+![frontend](https://github.com/dogpaw1230/teamProject/assets/146051611/5ab253a0-45c8-4a7e-9cb8-bbdeeca9a085)
+<br>
 
 ### 2. ERD
 
