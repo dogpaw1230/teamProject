@@ -52,7 +52,7 @@
 ### 1. 기술 스택
 
 - Backend
-  ![backend](https://github.com/dogpaw1230/teamProject/assets/146051611/2b93ffa4-d621-4c01-98c6-2218082a22cb)
+  ![backend](https://github.com/dogpaw1230/teamProject/assets/146051611/e4546c42-8cf9-4097-97c5-0c55dbfd98b2)
 
   Java, Spring, MyBatis, JSP, Tomcat, MySQL
 
