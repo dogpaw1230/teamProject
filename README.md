@@ -43,7 +43,7 @@
 
 - **동행 구하기 게시판** : 간편한 동행 신청이 가능한 게시판
 
-- **여행 후기 게시판** : 어떤 경험을 공유하고 다른 이용자들과 소통하는 게시판
+- **여행 후기 게시판** : 여행 경험을 공유하고 다른 이용자들과 소통하는 게시판
 
 <br><br>
 
@@ -51,6 +51,9 @@
 
 ### 1. 기술 스택
 
+- Backend
+  ![backend](https://github.com/dogpaw1230/teamProject/assets/146051611/0bc07db6-62a2-4c4f-b1b3-0f2935233985)
+  Java, Spring, MyBatis, JSP, Tomcat, MySQL
 
 ### 2. ERD
 
