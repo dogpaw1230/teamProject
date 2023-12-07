@@ -72,6 +72,6 @@
 
 ### 3. 시연 영상
 
-[BlueHorizon](https://youtu.be/-U5Wa2IEOi8)
+영상 보러가기 👉  [BlueHorizon](https://youtu.be/-U5Wa2IEOi8)
 
 # 👩🏻‍💻 프로젝트 주요 기능
