@@ -74,4 +74,6 @@
 
 영상 보러가기 👉  [BlueHorizon](https://youtu.be/-U5Wa2IEOi8)
 
+<br>
+
 # 👩🏻‍💻 프로젝트 주요 기능
