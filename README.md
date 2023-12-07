@@ -59,6 +59,8 @@
 
 - Frontend : HTML, CSS, Javascript, JQuery
 
+<br>
+
 ![frontend](https://github.com/dogpaw1230/teamProject/assets/146051611/5ab253a0-45c8-4a7e-9cb8-bbdeeca9a085)
 
 <br>
