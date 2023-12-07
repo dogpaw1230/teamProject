@@ -55,8 +55,6 @@
   
 ![backend1](https://github.com/dogpaw1230/teamProject/assets/146051611/a7178dc7-59d4-4111-ab3c-ebe6cc368548)
 
-
-
 <br>
 
 - Frontend : HTML, CSS, Javascript, JQuery
@@ -68,6 +66,9 @@
 <br>
 
 ### 2. ERD
+<br>
+
+![ERD](https://github.com/dogpaw1230/teamProject/assets/146051611/b6d07c79-d857-4932-8a2e-349c5d9d492a)
 
 ### 3. 시연 영상
 
