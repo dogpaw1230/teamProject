@@ -53,7 +53,8 @@
 
 - Backend : Java, Spring, MyBatis, JSP, Tomcat, MySQL
   
-![backend1](https://github.com/dogpaw1230/teamProject/assets/146051611/5afa81a5-3f24-4148-be31-e297e3a11851)
+![backend1](https://github.com/dogpaw1230/teamProject/assets/146051611/a7178dc7-59d4-4111-ab3c-ebe6cc368548)
+
 
 
 <br>
