@@ -85,8 +85,8 @@
                 <td><label for="genderInput1">성별</label></td>
               </tr>
               <tr>
-                <td><input type="text" id="nameInput1" name="reservationName"></td>
-                <td><input type="text" id="genderInput1" name="reservationGender"></td>
+                <td><input type="text" id="nameInput1" name="reservationName" autocomplete="off"></td>
+                <td><input type="text" id="genderInput1" name="reservationGender" autocomplete="off"></td>
               </tr>
               <tr><td colspan="2"></td></tr>
               <tr><td colspan="2"></td></tr>
@@ -121,10 +121,10 @@
               </tr>
               <tr>
                 <td>
-                  <input type="text" id="nationality1" name="reservationNationality">
+                  <input type="text" id="nationality1" name="reservationNationality" autocomplete="off">
                 </td>
                 <td>
-                  <input type="text" id="phone1" name="reservationPhone">
+                  <input type="text" id="phone1" name="reservationPhone" autocomplete="off">
                 </td>
               </tr>
               <tr><td colspan="2"></td></tr>
@@ -134,7 +134,7 @@
                 <td><label for="email1">이메일주소</label></td>
               </tr>
               <tr>
-                <td colspan="3"><input type="email" id="email1" name="reservationEmail"></td>
+                <td colspan="3"><input type="email" id="email1" name="reservationEmail" autocomplete="off"></td>
               </tr>
             </table>
             <input type="text" id="startDate1" value="${packageDto.packageStartDate}" name="packageStartDate" style="display: none">
@@ -168,7 +168,7 @@
         <label for="startDate">여행 날짜 : </label>
         <span id="startDate">${packageDto.packageStartDate}</span><br><br>
         <label for="reservationTotalPrice">결제 금액 : </label>
-        <span id="reservationTotalPrice">${packageDto.packagePrice}</span><br><br>
+        <span id="reservationTotalPrice">${packageDto.packagePrice} 원</span><br><br>
 
         <!-- submit 버튼을 form 태그 안에 추가 -->
         <div class="payMethod">
@@ -243,8 +243,8 @@
             '<td><label for="genderInput' + (lastNumber + 1) + '">성별</label></td>' +
             '</tr>' +
             '<tr>' +
-            '<td><input type="text" id="nameInput' + (lastNumber + 1) + '" name="reservationName"></td>' +
-            '<td><input type="text" id="genderInput' + (lastNumber + 1) + '" name="reservationGender"></td>' +
+            '<td><input type="text" id="nameInput' + (lastNumber + 1) + '" name="reservationName" autocomplete="off"></td>' +
+            '<td><input type="text" id="genderInput' + (lastNumber + 1) + '" name="reservationGender" autocomplete="off"></td>' +
             '</tr>' +
             '<tr><td colspan="2"></td></tr>' +
             '<tr style="display: none;">' +
@@ -271,8 +271,8 @@
             '<td><label for="phone' + (lastNumber + 1) + '">휴대전화 번호</label></td>' +
             '</tr>' +
             '<tr>' +
-            '<td><input type="text" id="nationality' + (lastNumber + 1) + '" name="reservationNationality"></td>' +
-            '<td><input type="text" id="phone' + (lastNumber + 1) + '" name="reservationPhone"></td>' +
+            '<td><input type="text" id="nationality' + (lastNumber + 1) + '" name="reservationNationality" autocomplete="off"></td>' +
+            '<td><input type="text" id="phone' + (lastNumber + 1) + '" name="reservationPhone" autocomplete="off"></td>' +
             '</tr>' +
             '<tr><td colspan="2"></td></tr>' +
             '<tr><td colspan="2"></td></tr>' +
@@ -281,7 +281,7 @@
             '<td><label for="email' + (lastNumber + 1) + '">이메일주소</label></td>' +
             '</tr>' +
             '<tr>' +
-            '<td colspan="3"><input type="email" id="email' + (lastNumber + 1) + '" name="reservationEmail"></td>' +
+            '<td colspan="3"><input type="email" id="email' + (lastNumber + 1) + '" name="reservationEmail" autocomplete="off"></td>' +
             '</tr>' +
             '</table>' +
             '<input type="text" id="startDate'+ (lastNumber + 1) + '" value="${packageDto.packageStartDate}" name="packageStartDate" style="display: none">' +
@@ -430,19 +430,23 @@
   function updatePeopleInfoCount() {
     // 예약자 정보 개수를 표시
     // console.log('PeopleInfo 개수:', peopleInfoCount);
-    totalPrice = parseInt(${packageDto.packagePrice}) * peopleInfoCount;
+    let totalPrice = parseInt(${packageDto.packagePrice}) * peopleInfoCount * 1000;
+
+    // 쉼표를 추가하여 숫자를 현지화된 문자열로 변환
+    let finalPrice = totalPrice.toLocaleString('en-US');
+    console.log(finalPrice);
     // DOM을 통해 Input 요소 가져오기
     let inputElement = document.querySelectorAll('[id^="reservationTotalPrice"]');
 
     // inputElements가 NodeList이기 때문에 각각의 엘리먼트에 대해 value를 설정
     inputElement.forEach(function (element) {
-      element.value = totalPrice;
+      element.value = finalPrice;
       console.log("inputElement: " + element);
     });
 
     let spanElement = document.getElementById('reservationTotalPrice');
-    spanElement.innerText = totalPrice;
-    console.log(totalPrice);
+    spanElement.innerText = finalPrice + ' 원';
+    console.log(finalPrice);
   }
 
   function formCheck(form) {

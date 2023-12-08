@@ -87,7 +87,8 @@
                                 </div>
                             </div>
                             <div class="accompany_review_img">
-                                <img src="<c:url value='/upload/${board.mainImagePath}'/>" alt="이미지 설명" />
+<%--                                <img src="<c:url value='/upload/${board.mainImagePath}'/>" alt="이미지 설명" />--%>
+                                <img src="<c:url value='/upload/' />${board.mainImagePath}"  alt="이미지 설명" />
                             </div>
                             <div class="user_info_travelinfo">
                                 <div class="user_info_travelinfo_content">

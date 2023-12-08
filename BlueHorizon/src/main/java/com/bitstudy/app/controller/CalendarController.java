@@ -108,9 +108,8 @@ public class CalendarController {
             reservationPeopleDto.setReservationPhone(reservationPhone.get(i));
             reservationPeopleDto.setReservationEmail(reservationEmail.get(i));
             reservationPeopleDto.setPackageStartDate(packageStartDate.get(i));
-            reservationPeopleDto.setPackagePrice(Integer.parseInt(packagePrice.get(i)));
-            reservationPeopleDto.setReservationTotalPrice(Integer.parseInt(reservationTotalPrice.get(i)));
-
+            reservationPeopleDto.setPackagePrice(Integer.parseInt(packagePrice.get(i).replace(",", "")));
+            reservationPeopleDto.setReservationTotalPrice(Integer.parseInt(reservationTotalPrice.get(i).replace(",", "")));
             reservationInfoList.add(reservationPeopleDto);
         }
 

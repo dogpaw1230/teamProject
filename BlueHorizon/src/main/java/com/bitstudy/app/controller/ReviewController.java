@@ -81,12 +81,14 @@ public class ReviewController {
             String saveFileName = FileUtil.checkDuplicate(realPath + fileName);
             //살제적인 파일로 저장
             imageFile.transferTo(new File(saveFileName));
-            String uploadFileName = saveFileName.substring(saveFileName.lastIndexOf("\\") + 1); // d이름만 뽑음
+            String uploadFileName = saveFileName.substring(saveFileName.lastIndexOf("/") + 1); // d이름만 뽑음
             reviewDto.setMainImagePath(uploadFileName);
             reviewDto.setMainUnique(fileName);//오리지널이름
+            System.out.println("getdetailImagePath: "+reviewDto.getdetailImagePath());
         }
         else {
             reviewDto.setMainImagePath(defaultImage);
+            System.out.println("getdetailImagePath: "+reviewDto.getdetailImagePath());
         }
 
 
@@ -106,8 +108,8 @@ public class ReviewController {
                 String saveDetailFileName = FileUtil.checkDuplicate(realPath + detailFileName);
                 detailImage.transferTo(new File(saveDetailFileName));
 
-                String uploadDetailFileName = saveDetailFileName.substring(saveDetailFileName.lastIndexOf("\\") + 1);
-                System.out.println(uploadDetailFileName);
+                String uploadDetailFileName = saveDetailFileName.substring(saveDetailFileName.lastIndexOf("/") + 1);
+                System.out.println("uploadDetailFileName"+uploadDetailFileName);
                 // 파일명을 StringBuilder에 추가
                 detailImageNamesBuilder.append(uploadDetailFileName).append(",");
             }
@@ -119,6 +121,7 @@ public class ReviewController {
             // ReviewDto에 디테일 이미지 경로 설정
             reviewDto.setdetailImagePath(detailImageNames);
             reviewDto.setDetailUnique(detailImageNames); // 오리지널 이름
+            System.out.println(detailImageNames);
         } else {
             // 파일을 선택하지 않았을 경우
             reviewDto.setdetailImagePath(""); // 경로 비움
@@ -189,7 +192,7 @@ public class ReviewController {
         if (img_m != null){
             String path = "resources/upload/"; //이미지 넣을 폴더
             String realPath = request.getRealPath(path); //리얼주소
-            File file_m = new File(realPath+ "\\" + img_m); // 메인 이미지 경로에 대한 File 객체 생성
+            File file_m = new File(realPath+ "/" + img_m); // 메인 이미지 경로에 대한 File 객체 생성
             System.out.println(file_m);
             if (file_m.exists()) {
                 file_m.delete(); // 파일이 존재하면 삭제
@@ -204,7 +207,7 @@ public class ReviewController {
             String realPath = request.getRealPath(path); // 리얼 주소
             String[] detailImagePath = img_d.split(","); // 콤마(,)로 구분된 이미지 경로들을 배열로 분할
             for (String imagePath : detailImagePath) {
-                File file_d = new File(realPath + "\\" + imagePath.trim()); // 각 이미지 경로에 대해 File 객체 생성 (.trim()을 통해 앞뒤 공백 제거)
+                File file_d = new File(realPath + "/" + imagePath.trim()); // 각 이미지 경로에 대해 File 객체 생성 (.trim()을 통해 앞뒤 공백 제거)
                 if (file_d.exists()) {
                     file_d.delete(); // 파일이 존재하면 삭제
                 }
@@ -225,6 +228,7 @@ public class ReviewController {
             String[] fileNames = detailImagePathFromDB.split(",");
             // 파일명을 모델에 추가하여 JSP로 전달
             model.addAttribute("fileNames", fileNames);
+            System.out.println("fileNames: " + fileNames);
         }
         model.addAttribute("board", reviewDto);
         return "update";
@@ -257,7 +261,7 @@ public class ReviewController {
             String saveFileName = FileUtil.checkDuplicate(realPath + fileName);
             //살제적인 파일로 저장
             imageFile.transferTo(new File(saveFileName));
-            String uploadFileName = saveFileName.substring(saveFileName.lastIndexOf("\\") + 1); // d이름만 뽑음
+            String uploadFileName = saveFileName.substring(saveFileName.lastIndexOf("/") + 1); // d이름만 뽑음
             reviewDto.setMainImagePath(uploadFileName);
             reviewDto.setMainUnique(fileName);//오리지널이름
         }else {
@@ -271,7 +275,7 @@ public class ReviewController {
         if (img_d != null) {
             String[] detailImagePath = img_d.split(",");
             for (String imagePath : detailImagePath) {
-                File file_d = new File(realPath + "\\" + imagePath.trim());
+                File file_d = new File(realPath + "/" + imagePath.trim());
                 if (file_d.exists()) {
                     file_d.delete();
                 }
@@ -290,7 +294,7 @@ public class ReviewController {
                 String saveDetailFileName = FileUtil.checkDuplicate(realPath + detailFileName);
                 detailImage.transferTo(new File(saveDetailFileName));
 
-                String uploadDetailFileName = saveDetailFileName.substring(saveDetailFileName.lastIndexOf("\\") + 1);
+                String uploadDetailFileName = saveDetailFileName.substring(saveDetailFileName.lastIndexOf("/") + 1);
                 System.out.println(uploadDetailFileName);
                 // 파일명을 StringBuilder에 추가
                 detailImageNamesBuilder.append(uploadDetailFileName).append(",");

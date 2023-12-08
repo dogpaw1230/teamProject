@@ -161,7 +161,7 @@
         }
         .main_content2{
             width: 400px;
-            height: 531px;
+            height: 600px;
             /*border: 1px solid red;*/
             /*padding-left: 10px;*/
             box-sizing: border-box;
@@ -357,7 +357,7 @@
             // a태그의 경우 화면 다 지우고 새로 로드 하는걸 안하게 한다
             event.preventDefault();
 
-            console.log($(this).attr('href'))
+            // console.log($(this).attr('href'))
             let href = $(this).attr('href');
 
             $('html, body').animate({
@@ -486,7 +486,7 @@
         // 각 요소에 대해 반복하면서 해당 날짜로 id를 지정해준다.
         realDays.forEach(function(realDay) {
             let dateForArray = realYear + "-" + realMonth + "-" + realDay.innerText;
-            console.log("년월일 : " + dateForArray);
+            // console.log("년월일 : " + dateForArray);
             realDay.nextElementSibling.id = dateForArray;
 
             // let nextRealDay = realDay.nextElementSibling;
@@ -501,7 +501,7 @@
         comparisonList.push("${item.packageStartDate}, ${item.packagePrice}, ${item.packageNo}");
         </c:forEach>
 
-        console.log(comparisonList);
+        // console.log(comparisonList);
 
         // realDateArray와 comparisonList의 날짜 비교해서 달력에 가격 넣기
         for(let i = 0; i < realDays.length; i++) {
@@ -520,10 +520,10 @@
                     let packNoText = dayText.nextElementSibling;
                     packNoText.innerHTML = leftPad(comparisonList[j].split(',')[3]);
                     // packNo.innerHTML = leftPad(comparisonList[j].split(',')[2]);
-                    console.log(comparisonList[j].split(',')[2]);
+                    // console.log(comparisonList[j].split(',')[2]);
                 }
                 else {
-                    console.log("no");
+                    // console.log("no");
                 }
             }
         }
@@ -580,8 +580,11 @@
     // 선택한 날짜의 가격 Input에 넣기
     function pushPrice(newDIV) {
         let selectedPrice = document.getElementsByClassName("choicePrice")[0].innerText;
+        selectedPrice = parseInt(selectedPrice.split('만')[0])*10000;
+        // 쉼표를 추가하여 숫자를 현지화된 문자열로 변환
+        let formattedPrice = selectedPrice.toLocaleString();
 
-        document.getElementById("totalPrice").value = selectedPrice;
+        document.getElementById("totalPrice").value = formattedPrice;
     }
 
     // 선택한 날짜의 packageNo input에 넣기
