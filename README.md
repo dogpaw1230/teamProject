@@ -220,3 +220,28 @@
 </table>
 
 <img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/cb2d8b77-802c-4448-a435-db0c6b814cfd">
+
+<br>
+
+### 🔑 여행 후기글 이미지 출력 에러
+<table>
+  <thead>
+    <tbody>
+      <tr>
+        <td>문제상황 </td>
+        <td>후기 게시글은 정상적으로 작성되나, 게시글에 업로드했던 이미지가 나타나지 않음</td>
+      </tr>
+      <tr>
+        <td>원인</td>
+        <td>Tomcat에서 artifact의 Output 폴더 경로가 target 폴더의 app-1.0.0-BUILD-SNAPSHOT...로 설정되어 있었음</td>
+      </tr>
+      <tr>
+        <td>해결</td>
+        <td>해당 경로를 실제 이미지 파일이 저장되는 src > main > resources 경로로 수정함</td>
+      </tr>
+    </tbody>
+  </thead>
+</table>
+
+<img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/4643fd4e-ea5e-441b-833e-8616db13e5c7">
+
