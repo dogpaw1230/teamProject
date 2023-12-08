@@ -176,11 +176,11 @@
 # 💣 트러블 슈팅
 
 ### 
+
+<img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/5ca2810c-0bcb-4060-b08c-168f80c7b3e0">
 <table>
   <thead>
     <tbody>
-      <img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/5ca2810c-0bcb-4060-b08c-168f80c7b3e0">
-
       <tr>
         <td>문제상황</td>
         <td>예약자가 2명 이상일 때, url로 하나의 키와 매칭되는 여러 개의 값이 전송되는데 서버에서 이를 어떻게 처리할 지 고민</td>
