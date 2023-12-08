@@ -177,7 +177,6 @@
 
 ### 
 
-<img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/5ca2810c-0bcb-4060-b08c-168f80c7b3e0">
 <table>
   <thead>
     <tbody>
@@ -196,3 +195,4 @@
     </tbody>
   </thead>
 </table>
+<img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/5ca2810c-0bcb-4060-b08c-168f80c7b3e0">
