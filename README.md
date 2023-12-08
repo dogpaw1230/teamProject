@@ -196,3 +196,27 @@
 </table>
 
 <img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/5ca2810c-0bcb-4060-b08c-168f80c7b3e0">
+
+<br>
+
+### 💥 날짜만 다른 중복 데이터 처리
+<table>
+  <thead>
+    <tbody>
+      <tr>
+        <td>문제상황</td>
+        <td>여행 상품을 검색했을 때, 날짜만 다른 같은 내용의 여행 상품이 여러 개 검색되는 문제</td>
+      </tr>
+      <tr>
+        <td>원인</td>
+        <td>각 여행 상품은 최소 2주 이상의 예약 가능한 날짜를 가지고 있기 때문에, 특정 날짜 이후에는 동일한 여행 상품이 여러 개 나타남</td>
+      </tr>
+      <tr>
+        <td>해결</td>
+        <td>이용자가 선택한 날짜로부터 가장 가까운 날짜를 새로운 컬럼으로 지정하고, group by로 필요한 데이터를 select 할 수 있도록 MyBatis를 수정함</td>
+      </tr>
+    </tbody>
+  </thead>
+</table>
+
+<img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/cb2d8b77-802c-4448-a435-db0c6b814cfd">
