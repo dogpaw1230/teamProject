@@ -90,7 +90,8 @@
 
 <br>
 
-![여행 상품 검색](https://github.com/dogpaw1230/teamProject/assets/146051611/401e404b-2689-4050-8117-94d756df10e5)
+![여행 상품 검색](https://github.com/dogpaw1230/teamProject/assets/146051611/d93c97a4-f39b-43ce-acdd-cc4862c4ee25)
+
 
 ### 2. 여행 상품 예약
 
