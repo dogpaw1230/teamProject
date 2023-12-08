@@ -197,7 +197,7 @@
 
 <img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/5ca2810c-0bcb-4060-b08c-168f80c7b3e0">
 
-<br>
+<br><br>
 
 ### 💥 날짜만 다른 중복 데이터 처리
 <table>
@@ -221,7 +221,7 @@
 
 <img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/cb2d8b77-802c-4448-a435-db0c6b814cfd">
 
-<br>
+<br><br>
 
 ### 🔑 여행 후기글 이미지 출력 에러
 <table>
