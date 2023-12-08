@@ -127,14 +127,19 @@
 >
 > 마이페이지에서 내역을 확인할 수 있고, 신청한 동행을 취소하거나 신청받은 동행을 수락 또는 거절할 수 있습니다.
 
+<br>
+
 👭 **동행**
 
 <img width="640" alt="동행1" src="https://github.com/dogpaw1230/teamProject/assets/146051611/a5610e32-47fd-4f2c-8658-181c4985e137">
+
   - 여행 동행 게시글을 검색하고 볼 수 있음
 <img width="640" alt="동행2" src="https://github.com/dogpaw1230/teamProject/assets/146051611/12714142-9d1a-43be-9450-0c02067dc063">
+
   - 여행 동행을 신청할 수 있음
 <img width="640" alt="동행3" src="https://github.com/dogpaw1230/teamProject/assets/146051611/7791d62c-0d10-42c4-8944-ea487a402d4d">
 <img width="640" alt="동행4" src="https://github.com/dogpaw1230/teamProject/assets/146051611/906a50a5-0195-4d1c-b63d-cd6f1ad90a2c">
+
   - 마이페이지에서 내가 신청한 동행 내역과 신청 받은 동행 내역을 볼 수 있음
 
 
