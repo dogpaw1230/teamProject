@@ -97,6 +97,7 @@
 
 # 💣 트러블 슈팅
 
+### 1. 
 <table>
   <thead>
     <tbody>
@@ -105,7 +106,11 @@
         <td></td>
       </tr>
       <tr>
-        <td>문제상황</td>
+        <td>원인</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>해결</td>
         <td></td>
       </tr>
     </tbody>
