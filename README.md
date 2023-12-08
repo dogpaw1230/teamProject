@@ -162,7 +162,7 @@
 <img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/84cb7feb-d8f1-4c4c-a5ac-a31df7c13c68">
 
 
-<br>
+<br><Br>
 
 📝 **여행 후기 작성**
 
