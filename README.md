@@ -100,12 +100,16 @@
 
 ### 2. 여행 상품 예약
 > 선택한 상품의 상세 설명과 예약 가능한 날짜 및 가격 표시하기
+> 예약자 정보 입력하고 예약 진행하기
 
 <br>
 
 <img width="640" alt="상품상세정보" src="https://github.com/dogpaw1230/teamProject/assets/146051611/19682951-3f2f-47ed-a0eb-dc3bb6ac7805">
+<img width="640" alt="상품상세정보" src="https://github.com/dogpaw1230/teamProject/assets/146051611/5822e623-09aa-4079-8442-5365c421cf24">
 
+📍 **예약**
 
+  - 
 ### 3. 동행 게시글 및 댓글 작성
 
 ### 4. 동행 신청과 수락 및 거절하기
