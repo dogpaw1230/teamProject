@@ -204,7 +204,7 @@
   <thead>
     <tbody>
       <tr>
-        <td style="width:200px">문제상황</td>
+        <td>문제상황</td>
         <td>여행 상품을 검색했을 때, 날짜만 다른 같은 내용의 여행 상품이 여러 개 검색되는 문제</td>
       </tr>
       <tr>
@@ -213,7 +213,7 @@
       </tr>
       <tr>
         <td>해결</td>
-        <td>이용자가 선택한 날짜로부터 가장 가까운 날짜를 새로운 컬럼으로 지정하고, group by로 필요한 데이터를 select 할 수 있도록 MyBatis를 수정함</td>
+        <td>이용자가 선택한 날짜로부터 가장 가까운 날짜를 새로운 컬럼으로 지정하고, group by로 필요한 데이터를 select 할 수 있도록 MyBatis를 수정함     </td>
       </tr>
     </tbody>
   </thead>
