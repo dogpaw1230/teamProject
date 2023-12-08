@@ -179,17 +179,19 @@
 <table>
   <thead>
     <tbody>
+      <img width="640" alt="후기게시글" src="https://github.com/dogpaw1230/teamProject/assets/146051611/5ca2810c-0bcb-4060-b08c-168f80c7b3e0">
+
       <tr>
         <td>문제상황</td>
-        <td></td>
+        <td>예약자가 2명 이상일 때, url로 하나의 키와 매칭되는 여러 개의 값이 전송되는데 서버에서 이를 어떻게 처리할 지 고민</td>
       </tr>
       <tr>
         <td>원인</td>
-        <td></td>
+        <td>인원 추가 버튼을 누르면 동적으로 요소가 생성되도록 구현했기 때문에 하나의 키에 여러 개의 값이 매칭됨</td>
       </tr>
       <tr>
         <td>해결</td>
-        <td></td>
+        <td>서버에서 요청을 받을 때, 전달된 정보를 List 형태의 매개변수로 받아 처리함</td>
       </tr>
     </tbody>
   </thead>
